@@ -1,0 +1,123 @@
+/* 1 break-point */
+
+@media screen and (max-width: 991px) {
+    
+h3{
+    font-size: 1.2rem;
+}
+
+.hum-toggel{
+    display: block;
+    margin-right: 20px;
+ }   
+
+.main-nav{
+    overflow: inherit;
+}
+
+.nav-link{
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    padding-block: 20px;
+ }
+
+ .nav-link.active{
+    left: 0;
+ }
+
+.nav-links,ul{
+    flex-direction: column;
+}
+
+ .example-area{
+    gap: 20px;
+ }
+
+ .example-card{
+    width: calc(50% - 10px);
+    height: 180px;
+ }
+
+ .page-section-bottom{
+    display: none;
+ }
+
+.footer-section{
+    height: 226px;
+    margin-top: 35px;
+    color: white;
+    background-color: #183b54;
+}
+
+}
+
+
+/* 2 break-point */
+
+@media screen and (max-width: 767px) {
+    .primary-text-color{
+        width: 100%;
+    }
+   
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .fearutres-card{
+        min-width: calc(50% - 10px);
+    }
+
+    .big-feature-container,#second-big-feature{
+        flex-direction: column;
+    }
+
+.last-footer-container{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+    
+}
+
+@media screen and (max-width: 479px) {
+    :root{
+        --padding-inline-section: 10px;
+    }
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.fearutres-card{
+        min-width: 100%;
+    }
+ 
+.example-card{
+    width: 100%;
+}
+
+
+
+}
